@@ -1,0 +1,40 @@
+body{
+	background-color: #CFCFD4;
+	margin: 0;
+	padding: 0;
+}
+
+#divcentral{
+	margin-left: 10%;
+	width: 80%;
+	border:0px solid red;
+}
+
+#divtitulo{
+	text-align: center;
+	margin-top: 3%;
+}
+
+#divformulario{
+	border:1px solid yellow;
+	margin-top: 3%;	
+}
+
+#divformulario h4{
+	text-align: center;
+}
+
+#divcontenedor{
+	border:1px solid green;
+	text-align: center;
+	margin-top: 3%;
+}
+
+/*#formAltaArticulo{
+	text-align: right;
+}*/
+
+#botones{
+	margin-top: 2%;
+}
+
