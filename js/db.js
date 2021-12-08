@@ -54,23 +54,36 @@ window.onload = function(){
 				listdp.textContent= crs.value.precio;
 				listrn.appendChild(listdp);
 
+				
 				const listdac1 = document.createElement("td");
+
+				const edipen = document.createElement("img");
+				edipen.setAttribute("src","img/edit.png");
 
 				const edbtn = document.createElement("button");
 				edbtn.textContent = "Editar";
 				edbtn.setAttribute("data-id",crs.value.id);
 				edbtn.setAttribute("id","Editar");
 				edbtn.setAttribute("class","btn btn-primary");
+				edbtn.setAttribute("title","Editar un articulo.");
 				edbtn.onclick = editarArticulo;
+				edbtn.appendChild(edipen);
 				listdac1.appendChild(edbtn);
+
+				const trash = document.createElement("img");
+				trash.setAttribute("src","img/trahs.png");
 
 				const elbtn = document.createElement("button");
 				elbtn.textContent = "Eliminar";
 				elbtn.setAttribute("data-id",crs.value.id);
 				elbtn.setAttribute("class","btn btn-warning");
 				elbtn.setAttribute("style","margin-left:2%;");
+				elbtn.setAttribute("title","Eliminar un articulo.");
 				elbtn.onclick = eliminarArticulo;
+				elbtn.appendChild(trash);
 				listdac1.appendChild(elbtn);
+
+				
 
 				listrn.appendChild(listdac1);							
 				
