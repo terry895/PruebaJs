@@ -11,11 +11,17 @@
 	<div class="container">
 		<div class="row">
 			<h3 align="center" class="m-2">Prueba JS</h3>
+			
 		    <div class="col-md-12">
 		      	<a href="crear.php"  class="btn btn-primary mt-4">Alta de Articulo</a>
 		      	<hr>
-		      	<table class="table tabel-striped table-bordered" id="tablarticulo">
+		      	<table class="table table-striped table-bordered" id="tablarticulo">
 		      		<thead>
+		      			<tr>
+			      			<td colspan="5" align="center">
+			      				<h4>Lista de Articulos</h4>
+			      			</td>
+			      		</tr>
 		      			<tr align="center">
 		      				<th>Nombre</th>
 		      				<th>Costo</th>
