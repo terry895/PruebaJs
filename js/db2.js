@@ -46,6 +46,7 @@ window.onload = function(){
 		trans.oncomplete = function(){
 			$("#mensaje").prop("style","display:initial;");
 			$("#mensaje").html('<div id="mensaje" class="alert alert-success" role="alert">Articulo agregado con exito.</div>');
+			setTimeout(OcultarMensaje,4000);
 		};
 		
 		trans.onerror = function(){
@@ -53,6 +54,8 @@ window.onload = function(){
 		};
 	}
 
-	
+	function OcultarMensaje(){
+		$("#mensaje").prop("style","display:none;");
+	}
 
 };

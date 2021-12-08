@@ -50,6 +50,11 @@ window.onload = function(){
 				document.getElementById("tcosto2").value="";
 				document.getElementById("tiva2").value="";
 				document.getElementById("tprecio2").value="";
+
+				leerId();
+				
+				setTimeout(OcultarMensaje,2000);
+
 			}
 		};
 
@@ -57,6 +62,10 @@ window.onload = function(){
 		request.onerror = function(){
 			swal("Error","No se actualizo el articulo.","error");
 		};
+	}
+
+	function OcultarMensaje(){
+		$("#mensaje").prop("style","display:none;");
 	}
 
 	function leerId(){
