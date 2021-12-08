@@ -13,7 +13,7 @@
 			<h3 align="center" class="m-2">Prueba JS</h3>
 			
 		    <div class="col-md-12">
-		      	<a href="crear.php"  class="btn btn-primary mt-4">Alta de Articulo</a>
+		      	<a href="crear.php"  class="btn btn-primary mt-4" title="Crear un articulo nuevo.">Alta de Articulo</a>
 		      	<hr>
 		      	<table class="table table-striped table-bordered" id="tablarticulo">
 		      		<thead>
