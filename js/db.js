@@ -8,7 +8,7 @@ window.onload = function(){
     swal('Error', 'Hubo problemas para crear el registro en memoria.', 'error');
   };
 
-  request.onupgradeneeded = function(e) => {
+  request.onupgradeneeded = function(e){
     db = e.target.result;
     const reg = db.createObjectStore('tb_articulos', { keyPath: 'id', autoIncrement: true });
     reg.createIndex('nombre', 'nombre', {});
