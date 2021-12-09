@@ -1,7 +1,7 @@
 const list = document.querySelector('tbody');
 let db;
 
-window.onload = function () => {
+window.onload = function(){
   const request = window.indexedDB.open('db_tienda', 1);
 
   request.onerror = () => {
