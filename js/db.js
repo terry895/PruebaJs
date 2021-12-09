@@ -1,14 +1,14 @@
 const list = document.querySelector('tbody');
 let db;
 
-window.onload = function(){
+window.onload = () => {
   const request = window.indexedDB.open('db_tienda', 1);
 
   request.onerror = () => {
     swal('Error', 'Hubo problemas para crear el registro en memoria.', 'error');
   };
 
-  request.onupgradeneeded = function(e){
+  request.onupgradeneeded = (e) => {
     db = e.target.result;
     const reg = db.createObjectStore('tb_articulos', { keyPath: 'id', autoIncrement: true });
     reg.createIndex('nombre', 'nombre', {});
@@ -38,14 +38,14 @@ window.onload = function(){
         const alm = trans.objectStore('tb_articulos');
         const req = alm.delete(id);
 
-        req.onsuccess = function(){
+        req.onsuccess = () => {
           swal('Realizado', 'Se elimino el articulo seleccionado.', 'success');
         };
-        req.onerror = function(){
+        req.onerror = () => {
           swal('Error', 'No see elimino el articulo seleccionado.', 'error');
         };
 
-        trans.oncomplete = function(){
+        trans.oncomplete = () => {
           mostrarDatos();
         };
       }
